@@ -1,0 +1,7 @@
+.Navbar{
+    border-top-style: solid ;
+    border-top-color: white;
+    position:fixed;
+    bottom:0px;
+    width:105%;
+}

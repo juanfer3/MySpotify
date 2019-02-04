@@ -1,0 +1,29 @@
+[2019-02-03 16:20:10.881] [main] [info] update#setState idle
+[2019-02-03 16:20:40.884] [main] [info] update#setState checking for updates
+[2019-02-03 16:20:41.019] [main] [info] update#setState idle
+[2019-02-03 16:23:41.269] [main] [error] Error: ENOENT: no such file or directory, open '/home/juanfer/my-spotify/~/.vscode-root/storage.json'
+    at Object.fs.openSync (original-fs.js:646:18)
+    at Object.t.writeFileAndFlushSync (/usr/share/code/resources/app/out/vs/code/electron-main/main.js:170:808)
+    at e.saveSync (/usr/share/code/resources/app/out/vs/code/electron-main/main.js:322:720)
+    at e.setItem (/usr/share/code/resources/app/out/vs/code/electron-main/main.js:322:405)
+    at e.setItem (/usr/share/code/resources/app/out/vs/code/electron-main/main.js:323:90)
+    at /usr/share/code/resources/app/out/vs/code/electron-main/main.js:513:816
+    at <anonymous>
+[2019-02-03 16:23:41.276] [main] [error] Error: ENOENT: no such file or directory, open '/home/juanfer/my-spotify/~/.vscode-root/storage.json'
+    at Object.fs.openSync (original-fs.js:646:18)
+    at Object.t.writeFileAndFlushSync (/usr/share/code/resources/app/out/vs/code/electron-main/main.js:170:808)
+    at e.saveSync (/usr/share/code/resources/app/out/vs/code/electron-main/main.js:322:720)
+    at e.setItem (/usr/share/code/resources/app/out/vs/code/electron-main/main.js:322:405)
+    at e.setItem (/usr/share/code/resources/app/out/vs/code/electron-main/main.js:323:90)
+    at e.saveRecentlyOpened (/usr/share/code/resources/app/out/vs/code/electron-main/main.js:423:510)
+    at e.addRecentlyOpened (/usr/share/code/resources/app/out/vs/code/electron-main/main.js:420:58)
+    at e.open (/usr/share/code/resources/app/out/vs/code/electron-main/main.js:491:987)
+    at /usr/share/code/resources/app/out/vs/code/electron-main/main.js:512:788
+    at <anonymous>
+[2019-02-03 16:23:41.311] [main] [error] Backup: Could not save workspaces.json: Error: ENOENT: no such file or directory, mkdir '/home/juanfer/my-spotify/~/.vscode-root/Backups'
+[2019-02-03 17:20:41.004] [main] [info] update#setState checking for updates
+[2019-02-03 17:20:42.047] [main] [info] update#setState idle
+[2019-02-03 18:20:41.036] [main] [info] update#setState checking for updates
+[2019-02-03 18:20:41.648] [main] [info] update#setState idle
+[2019-02-03 19:20:41.138] [main] [info] update#setState checking for updates
+[2019-02-03 19:20:41.741] [main] [info] update#setState idle

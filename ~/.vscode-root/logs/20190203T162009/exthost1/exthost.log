@@ -1,0 +1,14 @@
+[2019-02-03 16:20:24.703] [exthost] [info] extension host started
+[2019-02-03 16:20:24.722] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-02-03 16:20:24.722] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-02-03 16:20:24.848] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-02-03 16:20:24.848] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-02-03 16:20:24.904] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-02-03 16:20:24.904] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/dist/main
+[2019-02-03 16:20:25.115] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-02-03 16:20:25.115] [exthost] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-02-03 16:20:25.154] [exthost] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense {"startup":true,"activationEvent":"*"}
+[2019-02-03 16:20:25.154] [exthost] [info] ExtensionService#loadCommonJSModule /home/juanfer/.vscode/extensions/christian-kohler.path-intellisense-1.4.2/out/src/extension
+[2019-02-03 16:20:25.510] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2019-02-03 16:20:25.510] [exthost] [info] ExtensionService#loadCommonJSModule /home/juanfer/.vscode/extensions/dbaeumer.vscode-eslint-1.8.0/client/out/extension
+[2019-02-03 16:20:26.257] [exthost] [info] eager extensions activated

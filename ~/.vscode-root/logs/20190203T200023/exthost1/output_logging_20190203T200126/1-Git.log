@@ -1,0 +1,194 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/juanfer/proyectos_react/my-spotify
+> git status -z -u
+> git check-ignore -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/Services/Artist.js
+> git check-ignore -z --stdin
+> git ls-files --stage -- src/Services/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/Services/ApiArtist.js
+> git ls-files --stage -- src/Services/
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/Services/ApiArtists.js
+> git ls-files --stage -- src/Services/
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no se ha configurado upstream para la rama 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git show :src/Components/Home/Home.js
+> git ls-files --stage -- src/Components/Home/
+> git check-ignore -z --stdin
+> git show :src/Components/Artists/Artists.js
+> git ls-files --stage -- src/Components/Artists/
+> git check-ignore -z --stdin
+> git show :src/Components/Home/Home.js
+> git ls-files --stage -- src/Components/Home/
+> git show :src/Components/Artists/Artists.js
+> git ls-files --stage -- src/Components/Artists/
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git check-ignore -z --stdin
+> git show :src/Components/Home/Home.js
+> git ls-files --stage -- src/Components/Home/
+> git check-ignore -z --stdin
+> git show :src/Components/Navbar/Navbar.js
+> git ls-files --stage -- src/Components/Navbar/
+> git show :src/Components/Home/Home.js
+> git ls-files --stage -- src/Components/Home/
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git show :src/Services/ApiArtists.js
+> git ls-files --stage -- src/Services/
+> git show :src/Components/Navbar/Navbar.js
+> git ls-files --stage -- src/Components/Navbar/
+> git show :src/Components/Navbar/Navbar.css
+> git ls-files --stage -- src/Components/Navbar/
+> git show :src/Components/Navbar/Navbar.js
+> git ls-files --stage -- src/Components/Navbar/
+> git show :src/App.js
+> git show :src/Components/Navbar/Navbar.js
+> git ls-files --stage -- src/Components/Navbar/
+> git show :src/Components/Home/Home.js
+> git ls-files --stage -- src/Components/Home/
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git show :src/App.js
+> git show :src/Components/Navbar/Navbar.js
+> git ls-files --stage -- src/Components/Navbar/
+> git show :src/App.js
+> git show :src/Components/Navbar/Navbar.js
+> git ls-files --stage -- src/Components/Navbar/
+> git show :src/Components/Home/Home.js
+> git ls-files --stage -- src/Components/Home/
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git show :src/Components/Home/Home.js
+> git ls-files --stage -- src/Components/Home/
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git check-ignore -z --stdin
+> git show :public/index.html
+> git show :src/App.css
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git show :src/App.css
+> git show :src/App.css
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git show :src/App.css
+> git show :src/App.js
+> git show :public/index.html
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git show :src/index.js
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git show :src/index.js
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git show :public/index.html
+> git show :src/index.js
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git show :public/index.html
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git show :public/index.html
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/
+> git show :public/index.html
+> git show :src/Components/Artists/ArtistsList.js
+> git ls-files --stage -- src/Components/Artists/

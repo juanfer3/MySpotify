@@ -1,0 +1,7 @@
+[2019-02-03 16:20:23.105] [renderer1] [info] no standard startup: not the explorer viewlet
+[2019-02-03 16:23:41.298] [renderer1] [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?))
+[2019-02-03 16:23:41.301] [renderer1] [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?))
+[2019-02-03 16:23:41.302] [renderer1] [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?))
+[2019-02-03 16:23:41.303] [renderer1] [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?))
+[2019-02-03 16:23:41.303] [renderer1] [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?))
+[2019-02-03 16:23:41.305] [renderer1] [error] [storage state.vscdb] backup(): Error: ENOENT: no such file or directory, stat '/home/juanfer/my-spotify/~/.vscode-root/User/workspaceStorage/1549228812603/state.vscdb'
