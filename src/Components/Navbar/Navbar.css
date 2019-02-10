@@ -4,4 +4,8 @@
     position:fixed;
     bottom:0px;
     width:105%;
+    background-color: #282c34;
+}
+.iconNavbar:hover{
+    color:#47DD6A;
 }

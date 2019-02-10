@@ -1,0 +1,33 @@
+.imgOverlay{
+    transition: 0.5 ease;
+    opacity: 1;
+}
+
+.contenArtist{
+    position: relative;
+    transition: 0.5 ease;
+    text-align: center;
+    height: 0;
+    top: -200px;
+    opacity: 0;
+    color: white;
+    -webkit-transition: opacity 0.1s, -webkit-transform 0.1s;
+    transition: opacity 1s,-webkit-transform 1s,-moz-transform 1s,-o-transform 1s,transform 1s;
+}
+
+.contenImg:hover .imgOverlay{  
+    opacity: 0.3;
+}
+.contenImg:hover .contenArtist{  
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+.topNavbar{
+    margin-top: 10px;
+}
+.iconNavbar:hover{
+    color:#47DD6A;
+}

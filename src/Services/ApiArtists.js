@@ -1,14 +1,33 @@
 import axios from 'axios';
 
-const URL = 'https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=spain&api_key=d6c8cd5b2e080637e0f3c77eeb023bf5&format=json'
+const UrlArtists = 'https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=spain&api_key=d6c8cd5b2e080637e0f3c77eeb023bf5&format=json'
+const UrlAlbums = 'http://ws.audioscrobbler.com/2.0/?method=tag.gettopalbums&tag=disco&api_key=d6c8cd5b2e080637e0f3c77eeb023bf5&format=json'
+//const URL =`https://jsonplaceholder.typicode.com/todos/`
+
 function getArtist() {
-    return    axios.get(URL)
-            .then(function(response){
-                console.log(response.data);
-                return response.data;
+    return  axios.get(UrlArtists)
+            .then(response=>{
+                return response.data.topartists.artist
+                })
+}
+function getArtistName(name){
+    return axios
+        .get(`http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${name}&api_key=d6c8cd5b2e080637e0f3c77eeb023bf5&format=json`)
+            .then(response=>{
+                return response.data.artist
+            })
+}
+
+function getAlbums(){
+    return axios
+        .get(UrlAlbums)
+            .then(response=>{
+                return response.data.albums.album
             })
 }
 
 export {
-    getArtist
+    getArtist,
+    getArtistName,
+    getAlbums
 }

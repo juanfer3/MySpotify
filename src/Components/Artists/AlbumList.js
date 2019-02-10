@@ -1,36 +1,31 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import './ArtistList.css'
-
 /**Semantic ui */
 import { Grid, Image, Label, Icon } from 'semantic-ui-react'
 import MaterialIcon, {colorPalette} from 'material-icons-react';
 
 
 /**Services */
-import { getArtist } from "../../Services/ApiArtists";
+import { getAlbums } from "../../Services/ApiArtists";
 
 import Slider from "react-slick";
 
-class ArtistsList extends Component {
-    
+class AlbumList extends Component {
+
     constructor(props) {
         super(props)
         this.state = {
-           myArtist:[],
+            myAlbums:[],
            persons:[]
         };
       }
 
     componentDidMount(){
-        getArtist().then(data => {
+        getAlbums().then(data => {
             this.setState({
-                myArtist: data
+                myAlbums: data
             })}
         )
     }
-    //<Link to={`/artist/${artist.name}`} className="link">
-    //</Link>
 
     render() {
         var settings = {
@@ -68,30 +63,29 @@ class ArtistsList extends Component {
           };
         return (
             <div>
-                <h1>ArtistsList</h1>
-                
+                <h1>Lista de Albumnes</h1>
                 <Slider {...settings}>
-                    {this.state.myArtist.map(artist => {
+                    {this.state.myAlbums.map(album => {
                         return (
-                                <div key={artist.name} className='mySlider'>
+                                <div key={album.name}  className='mySlider'>
                                         <Image 
-                                        as={Link} to={`/artist/${artist.name}`}
-                                        className='BoxArtist' Linkto={`/artist/dave`} src={artist.image[3]['#text']} />
+                                        className='BoxArtist' 
+                                        src={album.image[3]['#text']}/>
                                         <br/>
                                         <br/>
                                         <div>
                                         <Label color='teal' horizontal>
                                             <Icon align='center' name='shuffle' spaced='center'/>
-                                        </Label>{artist.name}
+                                        </Label>
+                                        {album.name}
                                         </div>
                                 </div>
                         )}
                     )}
                 </Slider>
-                
             </div>
         );
     }
 }
 
-export default ArtistsList;
+export default AlbumList;

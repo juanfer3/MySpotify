@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Navbar.css'
 
@@ -15,7 +16,7 @@ class Navbar extends Component {
         return (
             <Grid columns='equal' className="Navbar">
                 <Grid.Row>
-                <Grid.Column><MaterialIcon size={25} icon="home" color='white' />
+                <Grid.Column as={ Link } to='/' ><MaterialIcon size={25} icon="home" color='white' />
                 </Grid.Column>
                 <Grid.Column>
                     <MaterialIcon  size={25} icon="search" color='white' /> 

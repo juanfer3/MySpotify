@@ -8,5 +8,25 @@
             "file:///home/juanfer/proyectos_react/my-spotify"
         ],
         "files2": []
+    },
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "/home/juanfer/proyectos_react/my-spotify",
+                "external": "file:///home/juanfer/proyectos_react/my-spotify",
+                "path": "/home/juanfer/proyectos_react/my-spotify",
+                "scheme": "file"
+            },
+            "backupPath": "/home/juanfer/proyectos_react/my-spotify/~/.vscode-root/Backups/127e38eb09cae36525bdef07d6f65112",
+            "uiState": {
+                "mode": 0,
+                "x": 67,
+                "y": 27,
+                "width": 1213,
+                "height": 997
+            }
+        }
     }
 }

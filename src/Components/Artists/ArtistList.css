@@ -1,0 +1,16 @@
+.BoxArtist{
+    -webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+}
+.mySlider:hover .BoxArtist{
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px 0 black;
+}
+
+.mySlider{
+    padding: 10%;
+}
