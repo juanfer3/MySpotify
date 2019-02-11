@@ -1,0 +1,4 @@
+.fondo_degrade{
+    background: black;
+    background: linear-gradient(to bottom right, gray, black);
+}

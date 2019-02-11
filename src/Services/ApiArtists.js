@@ -26,8 +26,17 @@ function getAlbums(){
             })
 }
 
+function getAlbumName(name) {
+    return axios 
+        .get(`http://ws.audioscrobbler.com/2.0/?method=album.search&album=${name}&api_key=d6c8cd5b2e080637e0f3c77eeb023bf5&format=json`)
+            .then(response=>{
+                return response.data.results.albummatches.album
+            })
+}
+
 export {
     getArtist,
     getArtistName,
-    getAlbums
+    getAlbums,
+    getAlbumName
 }

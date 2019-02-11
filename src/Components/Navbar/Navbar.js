@@ -16,16 +16,16 @@ class Navbar extends Component {
         return (
             <Grid columns='equal' className="Navbar">
                 <Grid.Row>
-                <Grid.Column as={ Link } to='/' ><MaterialIcon size={25} icon="home" color='white' />
+                <Grid.Column as={ Link } to='/' ><MaterialIcon size={25} icon="home"  />
                 </Grid.Column>
                 <Grid.Column>
-                    <MaterialIcon  size={25} icon="search" color='white' /> 
+                    <MaterialIcon  size={25} icon="search"  /> 
                 </Grid.Column>
                 <Grid.Column>
-                    <MaterialIcon  size={25} icon="vertical_split" color='white' />
+                    <MaterialIcon  size={25} icon="vertical_split"  />
                 </Grid.Column>
                 <Grid.Column>
-                    <MaterialIcon  size={25} icon="watch_later" color='white' />
+                    <MaterialIcon  size={25} icon="watch_later"  />
                 </Grid.Column>
                 </Grid.Row>
             </Grid>       

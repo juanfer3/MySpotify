@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Transition, CSSTransition } from 'react-transition-group';
 
-import './ArtisDetail.css';
+import './AlbumDetail.css';
 
 import { Grid, Image, Label, Icon, Button, Header, Modal, List } from 'semantic-ui-react'
 
@@ -11,28 +11,80 @@ import { Grid, Image, Label, Icon, Button, Header, Modal, List } from 'semantic-
 import MaterialIcon from 'material-icons-react';
 
 /**Services */
-import { getArtistName } from "../../Services/ApiArtists";
+import { getAlbumName } from "../../Services/ApiArtists";
 import Navbar from '../Navbar/Navbar';
 
-class ArtistDetail extends Component {
+class AlbumDetail extends Component {
     constructor(props) {
         super(props)
         this.state = {
            name: '',
            img: '',
+           myAlbums:[],
+           albumSelecte: [],
+           artist: '',
+
         };
     }
 
     componentDidMount(){
         const { match: {params} } = this.props;
-        getArtistName(params.name).then(data=>{
-            console.log(data);
+        getAlbumName(params.album).then((data, i)=>{
+            console.log(data)
             this.setState({
-                name: data.name,
-                img: data.image[3]['#text']
+                myAlbums: data
+            })
+            this.state.myAlbums.map((album, index) =>{
+                if (album.artist == params.artist && album.name == params.album) {
+                    this.setState({
+                        img: album.image[3]['#text']
+                    })
+                }
+            })
+            this.setState({
+                artist: params.artist,
+                name: params.album
             })
         })
+
+        
+     
     }
+
+    /*
+    list(){
+
+        console.log('entra a la lista')
+        let artista = this.state.artist
+        let arrayAlbum = this.state.myAlbums.find(album => (album.artist == artista))
+        console.log(this.state.albumSelecte)
+
+        this.setState({
+            albumSelecte: this.state.albumSelecte
+        })
+
+        if (this.setState.albumSelecte != arrayAlbum) {
+            console.log('variable no nula')
+            this.setState({
+                img: this.state.albumSelecte.image[3]['#text']
+            })
+        }
+        
+        
+        /* filert
+        this.state.myAlbums.filter(function(album, index){
+            return album.artist == artista
+        }
+            ).map(artits =>{
+                console.log(artits)
+            return(
+                <h1>{artits.name}</h1>
+            )
+        })
+        
+}*/
+
+
 
     render() {
         return (
@@ -96,7 +148,7 @@ class ArtistDetail extends Component {
                                     target='_blank'
                                     className='imgOverlay'
                                 />
-                                <div className="contenArtist neon">
+                                <div className="contenAlbum neon">
                                     <h3 className='neon_a' >
                                         {this.state.name}
                                     </h3>   
@@ -113,6 +165,7 @@ class ArtistDetail extends Component {
                                 <Icon align='center' name='shuffle' spaced='center'/>
                                 ESCUCHAR EN MODO ALEATORIO
                             </Label>
+                            <p>Àlbum de {this.state.artist}</p>
                         </Grid.Column>
                         <Grid.Column>
                             <div className='content_btn_neon '>
@@ -130,4 +183,4 @@ class ArtistDetail extends Component {
     }
 }
 
-export default ArtistDetail;
+export default AlbumDetail;

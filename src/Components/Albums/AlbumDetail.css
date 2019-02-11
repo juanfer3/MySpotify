@@ -3,7 +3,7 @@
     opacity: 1;
 }
 
-.contenArtist{
+.contenAlbum{
     position: relative;
     transition: 0.5 ease;
     text-align: center;
@@ -21,7 +21,7 @@
 .contenImg:hover .imgOverlay{  
     opacity: 0.3;
 }
-.contenImg:hover .contenArtist{  
+.contenImg:hover .contenAlbum{  
     opacity: 1;
     -webkit-transform: translate3d(0%, 0%, 0);
     transform: translate3d(0%, 0%, 0);

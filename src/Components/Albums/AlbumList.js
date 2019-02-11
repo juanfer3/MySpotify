@@ -1,34 +1,32 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './ArtistList.css'
+import { Transition, CSSTransition } from 'react-transition-group';
 
 /**Semantic ui */
 import { Grid, Image, Label, Icon } from 'semantic-ui-react'
 import MaterialIcon, {colorPalette} from 'material-icons-react';
 
 
-import { Transition, CSSTransition } from 'react-transition-group';
-
-
 /**Services */
-import { getArtist } from "../../Services/ApiArtists";
+import { getAlbums } from "../../Services/ApiArtists";
 
 import Slider from "react-slick";
 
-class ArtistsList extends Component {
-    
+class AlbumList extends Component {
+
     constructor(props) {
         super(props)
         this.state = {
-           myArtist:[],
+            myAlbums:[],
            persons:[]
         };
       }
 
     componentDidMount(){
-        getArtist().then(data => {
+        getAlbums().then(data => {
+            console.log(data)
             this.setState({
-                myArtist: data
+                myAlbums: data
             })}
         )
     }
@@ -68,25 +66,27 @@ class ArtistsList extends Component {
               ]
           };
         return (
-            <Transition timeout={200} in={true} appear>
+            <Transition timeout={450} in={true} appear>
                 {(status) =>(
                     <div className={`fade fade-${status}`}>
                         <div className='neon'>
-                            <h1 className='neon_a' data-text='ArtistsList'>ArtistsList</h1>
+                            <h1 className='neon_a' data-text='Lista de Albumnes' >Lista de Albumnes</h1>
                         </div>
                         <Slider {...settings}>
-                            {this.state.myArtist.map(artist => {
+                            {this.state.myAlbums.map(album => {
                                 return (
-                                        <div key={artist.name} className='mySlider'>
+                                        <div key={album.name}  className='mySlider'>
                                                 <Image 
-                                                as={Link} to={`/artist/${artist.name}`}
-                                                className='BoxArtist' src={artist.image[3]['#text']} />
+                                                className='BoxArtist' 
+                                                as={Link}  to={`/${album.artist.name}/${album.name}`}
+                                                src={album.image[3]['#text']}/>
                                                 <br/>
                                                 <br/>
                                                 <div>
                                                 <Label color='teal' horizontal>
                                                     <Icon align='center' name='shuffle' spaced='center'/>
-                                                </Label> {artist.name}
+                                                </Label>
+                                                {album.name}
                                                 </div>
                                         </div>
                                 )}
@@ -99,4 +99,4 @@ class ArtistsList extends Component {
     }
 }
 
-export default ArtistsList;
+export default AlbumList;

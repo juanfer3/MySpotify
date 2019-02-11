@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 .App {
   text-align: center;
   color: white;
@@ -13,6 +13,7 @@
 
 .App-header {
   background-color: #282c34;
+ 
   min-height: 100vh;
   display: flex;
   flex-direction: column;

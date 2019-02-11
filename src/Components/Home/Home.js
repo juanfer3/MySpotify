@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Navbar from '../Navbar/Navbar';
-import AlbumList from '../Artists/AlbumList';
+import AlbumList from '../Albums/AlbumList';
 import ArtistsList from '../Artists/ArtistsList';
 
 class Home extends Component {
