@@ -1,6 +1,6 @@
 import * as firebase from 'firebase'; 
 
-
+const provider = new firebase.auth.GoogleAuthProvider();
 
 // Initialize Firebase
 const config = {
@@ -13,13 +13,23 @@ const config = {
   };
   firebase.initializeApp(config);
 
-  function getInfo(){
+function getInfo(){
     const usuarios = firebase.database().ref().child('usuarios')
     
     console.log(firebase.database().ref().child('form').child('usuarios'))
     return usuarios
 }
 
+function  login(){
+   return firebase.auth().signInWithPopup(provider)
+        .then((result)=>{
+            console.log(result.user.displayName);
+            const user = result.user;
+            return user;
+        })
+}
+
 export {
-    getInfo
+    getInfo,
+    login
 }

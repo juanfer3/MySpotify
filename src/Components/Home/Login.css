@@ -1,4 +1,4 @@
-.fondo_degrade{
+.background_black{
     background: black;
-    background: linear-gradient(to bottom right, gray, black);
+    max-height: 100%;
 }
